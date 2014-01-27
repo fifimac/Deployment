@@ -1,0 +1,11 @@
+GNU nano 2.2.6       File: /tmp/crontab.nUt3ec/crontab
+
+# m h  dom mon dow   command
+# The log.out file records the "log_and_monitor.sh" script, which ..... and apppends the new content to the end
+*/1 * * * * sudo bash /home/testuser/project/log_and_monitor.sh  >> /home/testuser/project/log.out
+#
+# The UT1.out file records Unit Test contained in the "UT1.sh" script, it overwrites the previous record with the most recent one.
+*/2 * * * * sudo bash /home/testuser/project/UT1.sh  >  /home/testuser/project/UT1.out
+
+
+
